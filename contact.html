@@ -1,176 +1,132 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AI & Data Science Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <span class="logo-text">AI</span>Portfolio
+                        </a>
+                    </div>
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-{% block title %}Contact | AI & Data Science Portfolio{% endblock %}
-
-{% block content %}
-<section class="section contact-section">
-    <div class="container">
-        <h1 class="section-title">Get In Touch</h1>
-        <p class="section-description text-center">Have a project in mind or want to discuss how AI and data science can help your organization? I'd love to hear from you!</p>
-        
-        <div class="contact-container">
-            <div class="contact-info animate-on-scroll">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Email</h4>
-                        <p>hello@datascientist.com</p>
-                    </div>
-                </div>
+    <main>
+        <section class="section contact-section">
+            <div class="container">
+                <h1 class="section-title">Get in Touch</h1>
+                <p class="section-description text-center">Have a project in mind or want to discuss a collaboration? Feel free to reach out!</p>
                 
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-card animate-on-scroll">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>contact@aiengineer.com</p>
+                        </div>
+                        <div class="contact-card animate-on-scroll">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="contact-card animate-on-scroll">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                        <div class="contact-social animate-on-scroll">
+                            <h3>Connect with me</h3>
+                            <div class="social-icons">
+                                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://medium.com/@yourusername" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                                <a href="https://kaggle.com/yourusername" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <h4>Phone</h4>
-                        <p>+1 (123) 456-7890</p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Location</h4>
-                        <p>San Francisco, CA</p>
-                    </div>
-                </div>
-                
-                <div class="contact-social">
-                    <h4>Connect With Me</h4>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://medium.com/@yourusername" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
-                        <a href="https://kaggle.com/yourusername" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                    
+                    <div class="contact-form-container animate-on-scroll">
+                        <form class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
-            
-            <div class="contact-form animate-on-scroll">
-                <form action="#" method="POST" id="contactForm">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" id="subject" name="subject" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" class="form-control" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
-                </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">AI</span>Portfolio
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://medium.com/@yourusername" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                    <a href="https://kaggle.com/yourusername" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2023 Data Scientist & AI Engineer. All rights reserved.
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </footer>
 
-<section class="section map-section" style="padding-top: 0;">
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.50764017856939!3d37.75781499368296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1656921234567!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</section>
-{% endblock %}
-
-{% block extra_css %}
-<style>
-.section-description {
-    max-width: 800px;
-    margin: 0 auto 50px;
-    color: var(--gray-text);
-    font-size: 1.1rem;
-}
-
-.contact-social {
-    margin-top: 40px;
-}
-
-.contact-social h4 {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: var(--gray-color);
-    color: var(--dark-color);
-    border-radius: 50%;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-}
-
-.social-icons a:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-3px);
-}
-
-.map-container {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-}
-
-#contactForm button {
-    margin-top: 10px;
-}
-</style>
-{% endblock %}
-
-{% block extra_js %}
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // In a real implementation, you would send the form data to a server
-            // For this demo, we'll just show a success message
-            
-            const name = document.getElementById('name').value;
-            
-            // Create a success message
-            const formContainer = contactForm.parentElement;
-            contactForm.style.display = 'none';
-            
-            const successMessage = document.createElement('div');
-            successMessage.className = 'success-message';
-            successMessage.innerHTML = `
-                <i class="fas fa-check-circle"></i>
-                <h3>Message Sent!</h3>
-                <p>Thank you, ${name}! Your message has been sent successfully. I'll get back to you as soon as possible.</p>
-            `;
-            
-            formContainer.appendChild(successMessage);
-        });
-    }
-});
-</script>
-{% endblock %} 
+    <!-- JavaScript -->
+    <script src="static/js/main.js"></script>
+</body>
+</html> 
