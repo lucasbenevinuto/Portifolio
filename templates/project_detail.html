@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.title }} | Project Details{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="project-detail">
+            <div class="project-detail-header">
+                <h1 class="project-detail-title">{{ project.title }}</h1>
+                <div class="project-detail-tech">
+                    {% for tech in project.technologies %}
+                    <span class="tech-tag">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <img src="{{ project.image }}" alt="{{ project.title }}" class="project-detail-img">
+            
+            <div class="project-detail-section">
+                <h3>Project Overview</h3>
+                <p>{{ project.description }}</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam nisl, nec aliquam nisl nisl nec nisl.</p>
+            </div>
+            
+            <div class="project-detail-section">
+                <h3>Challenge</h3>
+                <p>The main challenge in this project was to create a model that could accurately detect fraudulent transactions while minimizing false positives. Traditional rule-based systems were producing too many false alarms, causing operational inefficiencies and customer frustration.</p>
+            </div>
+            
+            <div class="project-detail-section">
+                <h3>Solution</h3>
+                <p>I developed a machine learning solution using a combination of supervised and unsupervised learning techniques:</p>
+                <ul>
+                    <li>Data preprocessing and feature engineering to extract meaningful patterns</li>
+                    <li>Anomaly detection using isolation forests to identify outliers</li>
+                    <li>Gradient boosting models (XGBoost) for classification</li>
+                    <li>Ensemble approach combining multiple models for robust predictions</li>
+                    <li>Explainable AI techniques to provide reasoning behind flagged transactions</li>
+                </ul>
+            </div>
+            
+            <div class="project-detail-section">
+                <h3>Technology Stack</h3>
+                <p>The solution was built using the following technologies:</p>
+                <ul>
+                    <li><strong>Python</strong> - Core programming language</li>
+                    <li><strong>Pandas & NumPy</strong> - Data manipulation and numerical operations</li>
+                    <li><strong>Scikit-learn</strong> - Feature engineering and model evaluation</li>
+                    <li><strong>XGBoost</strong> - Gradient boosting implementation</li>
+                    <li><strong>TensorFlow</strong> - Deep learning components</li>
+                    <li><strong>SHAP</strong> - Model explainability</li>
+                    <li><strong>Flask</strong> - API development for model deployment</li>
+                    <li><strong>Docker</strong> - Containerization</li>
+                </ul>
+            </div>
+            
+            <div class="project-detail-section">
+                <h3>Results</h3>
+                <p>The implemented solution achieved:</p>
+                <ul>
+                    <li>30% increase in fraud detection rate compared to the previous system</li>
+                    <li>65% reduction in false positives</li>
+                    <li>$2.1M estimated annual savings from prevented fraud</li>
+                    <li>Improved customer experience due to fewer false declines</li>
+                </ul>
+            </div>
+            
+            <div class="project-links" style="margin-top: 40px;">
+                {% if project.github %}
+                <a href="{{ project.github }}" target="_blank" class="btn"><i class="fab fa-github"></i> View on GitHub</a>
+                {% endif %}
+                <a href="/projects" class="btn btn-outline">Back to Projects</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Data Science & AI Portfolio{% endblock %}</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="/" class="logo-link">
+                            <span class="logo-text">AI</span>Portfolio
+                        </a>
+                    </div>
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a></li>
+                        <li><a href="/about" class="{% if active_page == 'about' %}active{% endif %}">About</a></li>
+                        <li><a href="/projects" class="{% if active_page == 'projects' %}active{% endif %}">Projects</a></li>
+                        <li><a href="/skills" class="{% if active_page == 'skills' %}active{% endif %}">Skills</a></li>
+                        <li><a href="/blog" class="{% if active_page == 'blog' %}active{% endif %}">Blog</a></li>
+                        <li><a href="/contact" class="{% if active_page == 'contact' %}active{% endif %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">AI</span>Portfolio
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://medium.com/@yourusername" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                    <a href="https://kaggle.com/yourusername" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                </div>
+                <div class="footer-copy">
+                    &copy; {% block year %}2023{% endblock %} Data Scientist & AI Engineer. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/static/js/main.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html> 

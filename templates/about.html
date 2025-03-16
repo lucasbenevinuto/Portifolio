@@ -1,0 +1,328 @@
+{% extends "base.html" %}
+
+{% block title %}About Me | AI & Data Science Portfolio{% endblock %}
+
+{% block content %}
+<section class="section about-section">
+    <div class="container">
+        <h1 class="section-title">About Me</h1>
+        
+        <div class="about-grid">
+            <div class="about-image animate-on-scroll">
+                <img src="{{ url_for('static', path='images/profile.jpg') }}" alt="Data Scientist & AI Engineer" class="about-img">
+            </div>
+            
+            <div class="about-content animate-on-scroll">
+                <h3>Data Scientist & AI Engineer</h3>
+                <p>Hello! I'm a passionate Data Scientist and AI Engineer with over 8 years of experience building machine learning solutions for real-world problems across various industries. My expertise lies at the intersection of data science, artificial intelligence, and software engineering.</p>
+                
+                <p>I specialize in developing end-to-end ML systems, from data collection and preprocessing to model development, deployment, and monitoring. I'm particularly interested in natural language processing, computer vision, and the ethical implications of AI technologies.</p>
+                
+                <div class="about-buttons">
+                    <a href="/static/files/resume.pdf" class="btn" target="_blank"><i class="fas fa-download"></i> Download Resume</a>
+                    <a href="/contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-number">8+</div>
+                <div class="stat-title">Years Experience</div>
+            </div>
+            
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-number">50+</div>
+                <div class="stat-title">Projects Completed</div>
+            </div>
+            
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-number">20+</div>
+                <div class="stat-title">Happy Clients</div>
+            </div>
+        </div>
+        
+        <div class="experience-section">
+            <h2 class="section-title animate-on-scroll">Professional Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior AI Engineer</h3>
+                        <h4>TechInnovate AI Solutions</h4>
+                        <p>Leading the development of ML/AI solutions for enterprise clients. Responsible for designing, implementing, and deploying machine learning models for various use cases including computer vision, NLP, and time series forecasting.</p>
+                        <ul>
+                            <li>Led a team of 5 data scientists to implement a real-time fraud detection system that reduced fraud by 35%</li>
+                            <li>Designed and implemented an NLP pipeline for customer feedback analysis, increasing customer satisfaction by 28%</li>
+                            <li>Developed an internal MLOps platform that reduced model deployment time by 70%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Engineer</h3>
+                        <h4>DataDriven Technologies</h4>
+                        <p>Developed and deployed machine learning models for predictive analytics. Worked on computer vision projects for retail analytics and recommendation systems for e-commerce platforms.</p>
+                        <ul>
+                            <li>Built a computer vision system for retail analytics that improved in-store layout efficiency by 22%</li>
+                            <li>Implemented a product recommendation engine that increased conversion rates by 15%</li>
+                            <li>Designed and built an automated machine learning pipeline for data preprocessing and model training</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2015 - 2018</div>
+                    <div class="timeline-content">
+                        <h3>Data Scientist</h3>
+                        <h4>Global Analytics Inc.</h4>
+                        <p>Analyzed large datasets to extract actionable insights for business decision-making. Built predictive models for customer segmentation, churn prediction, and market trend analysis.</p>
+                        <ul>
+                            <li>Developed customer segmentation models that improved marketing campaign ROI by 30%</li>
+                            <li>Created a churn prediction model that helped retain $2.5M in annual revenue</li>
+                            <li>Built interactive dashboards for real-time business analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="education-section">
+            <h2 class="section-title animate-on-scroll">Education & Certifications</h2>
+            
+            <div class="education-grid">
+                <div class="education-item animate-on-scroll">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>MSc in Computer Science</h3>
+                        <h4>Stanford University</h4>
+                        <p>Specialization in Machine Learning</p>
+                        <div class="education-year">2013 - 2015</div>
+                    </div>
+                </div>
+                
+                <div class="education-item animate-on-scroll">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>BSc in Mathematics</h3>
+                        <h4>MIT</h4>
+                        <p>Minor in Computer Science</p>
+                        <div class="education-year">2009 - 2013</div>
+                    </div>
+                </div>
+                
+                <div class="education-item animate-on-scroll">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>TensorFlow Developer Certificate</h3>
+                        <h4>Google</h4>
+                        <div class="education-year">2020</div>
+                    </div>
+                </div>
+                
+                <div class="education-item animate-on-scroll">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>AWS Certified Machine Learning Specialty</h3>
+                        <h4>Amazon Web Services</h4>
+                        <div class="education-year">2021</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.about-image {
+    position: relative;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.about-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.experience-section,
+.education-section {
+    margin-top: 80px;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 44px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.timeline-content {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+    font-size: 1rem;
+    color: var(--gray-text);
+    margin-bottom: 15px;
+}
+
+.timeline-content p {
+    margin-bottom: 15px;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+}
+
+.timeline-content ul li {
+    margin-bottom: 8px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.education-item {
+    display: flex;
+    background-color: var(--light-color);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+}
+
+.education-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(74, 108, 247, 0.1);
+    color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.education-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.education-content h4 {
+    font-size: 0.95rem;
+    color: var(--gray-text);
+    margin-bottom: 5px;
+}
+
+.education-year {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .about-buttons {
+        flex-direction: column;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline-dot {
+        left: 14px;
+    }
+    
+    .timeline-date {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 10px;
+    }
+    
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+{% endblock %} 

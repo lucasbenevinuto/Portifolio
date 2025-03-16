@@ -1,0 +1,319 @@
+{% extends "base.html" %}
+
+{% block title %}AI & Data Science Portfolio | Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title animate-on-scroll">Data Scientist & AI Engineer</h1>
+            <p class="hero-subtitle animate-on-scroll">
+                Building intelligent solutions with data science, machine learning, and artificial intelligence.
+            </p>
+            <div class="hero-btns">
+                <a href="/projects" class="btn animate-on-scroll">View Portfolio</a>
+                <a href="/contact" class="btn btn-outline animate-on-scroll">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <p class="section-subtitle animate-on-scroll">What I Do</p>
+        <h2 class="section-title animate-on-scroll">Turning Data into Impact</h2>
+        
+        <div class="services-grid">
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Design and implement custom machine learning solutions to solve complex business problems.</p>
+            </div>
+            
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Data Analysis</h3>
+                <p>Extract meaningful insights from data through advanced statistical analysis and visualization.</p>
+            </div>
+            
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Development</h3>
+                <p>Create sophisticated AI systems using deep learning, natural language processing, and computer vision.</p>
+            </div>
+            
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h3>MLOps</h3>
+                <p>Build robust ML pipelines for model training, deployment, monitoring, and continuous improvement.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section featured-projects" style="background-color: var(--gray-color);">
+    <div class="container">
+        <p class="section-subtitle animate-on-scroll">Featured Work</p>
+        <h2 class="section-title animate-on-scroll">Recent Projects</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card animate-on-scroll">
+                <div class="project-img">
+                    <img src="/static/images/project1.jpg" alt="Machine Learning Fraud Detection">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Machine Learning Fraud Detection</h3>
+                    <p class="project-description">Built a fraud detection system using ensemble learning methods that increased detection rate by 30%.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">XGBoost</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="/projects/1" class="project-link"><i class="fas fa-eye"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card animate-on-scroll">
+                <div class="project-img">
+                    <img src="/static/images/project2.jpg" alt="Natural Language Processing for Customer Service">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">NLP for Customer Service</h3>
+                    <p class="project-description">Developed an NLP system to categorize and prioritize customer support tickets, reducing response time by 45%.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NLTK</span>
+                        <span class="tech-tag">BERT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="/projects/2" class="project-link"><i class="fas fa-eye"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card animate-on-scroll">
+                <div class="project-img">
+                    <img src="/static/images/project3.jpg" alt="Computer Vision for Retail Analytics">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">CV for Retail Analytics</h3>
+                    <p class="project-description">Created a computer vision system to analyze customer movements in retail spaces to optimize store layouts.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">PyTorch</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="/projects/3" class="project-link"><i class="fas fa-eye"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center" style="margin-top: 40px;">
+            <a href="/projects" class="btn">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<section class="section testimonials">
+    <div class="container">
+        <p class="section-subtitle animate-on-scroll">What Others Say</p>
+        <h2 class="section-title animate-on-scroll">Testimonials</h2>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card animate-on-scroll">
+                <div class="testimonial-content">
+                    <p>"The machine learning solution delivered exceptional results, improving our prediction accuracy by over 40% and significantly reducing false positives."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <h4>Dr. Sarah Johnson</h4>
+                        <p>Chief Data Officer, HealthTech Inc.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card animate-on-scroll">
+                <div class="testimonial-content">
+                    <p>"The NLP system developed for our customer service department has completely transformed our ability to handle tickets efficiently. Response times are down by 45%."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <h4>Michael Chen</h4>
+                        <p>Director of Customer Experience, TechSupport Global</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card animate-on-scroll">
+                <div class="testimonial-content">
+                    <p>"Working with this data scientist was one of the best decisions we made. The retail analytics system provided insights that directly led to a 22% increase in sales."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <h4>Jennifer Williams</h4>
+                        <p>VP of Retail Operations, Fashion Forward</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta" style="background-color: var(--primary-color);">
+    <div class="container">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to transform your data into actionable insights?</h2>
+            <p class="cta-text">Let's discuss how AI and data science can help your organization achieve its goals.</p>
+            <a href="/contact" class="btn" style="background-color: white; color: var(--primary-color);">Get in Touch</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+/* Estilos específicos da página inicial */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(74, 108, 247, 0.1);
+    color: var(--primary-color);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-content p {
+    position: relative;
+    padding-left: 20px;
+}
+
+.testimonial-content p::before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.testimonial-author-info p {
+    color: var(--gray-text);
+    font-size: 0.9rem;
+}
+
+.cta {
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .services-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+}
+</style>
+{% endblock %} 
