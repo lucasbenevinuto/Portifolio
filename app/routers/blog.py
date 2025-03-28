@@ -7,70 +7,70 @@ router = APIRouter()
 
 templates = Jinja2Templates(directory="templates")
 
-# Sample blog post data - in a real application, this would come from a database
+# Medium articles to be featured in the blog section
 blog_posts = [
     {
         "id": 1,
-        "title": "Building Explainable AI Systems",
-        "summary": "How to make AI systems more transparent and interpretable for end-users.",
-        "content": """
-        <p>Explainable AI (XAI) is becoming increasingly important as AI systems are deployed in critical domains. This article explores techniques for making AI more interpretable.</p>
-        <h3>Why Explainability Matters</h3>
-        <p>As AI systems become more complex, the "black box" nature of models like deep neural networks can be problematic, especially in regulated industries or high-stakes decision making.</p>
-        <h3>Techniques for Explainable AI</h3>
-        <ul>
-            <li>LIME (Local Interpretable Model-agnostic Explanations)</li>
-            <li>SHAP (SHapley Additive exPlanations)</li>
-            <li>Feature importance visualization</li>
-            <li>Counterfactual explanations</li>
-        </ul>
-        <p>By implementing these techniques, we can build AI systems that not only perform well but also provide insights into their decision-making process.</p>
-        """,
-        "date": datetime(2023, 9, 15),
-        "author": "Dr. Data Scientist",
-        "tags": ["Explainable AI", "Machine Learning", "Ethics"]
+        "title": "SVMs: Teoria e Prática",
+        "summary": "Um artigo sobre Support Vector Machines, explicando os conceitos teóricos e aplicações práticas.",
+        "url": "https://medium.com/@lucasbenevinutopereira/svms-teoria-e-prática-ee741e544080",
+        "date": datetime(2024, 3, 10),
+        "author": "Lucas Benevinuto",
+        "tags": ["Machine Learning", "SVMs", "Classificação"]
     },
     {
         "id": 2,
-        "title": "Optimizing Neural Networks for Production",
-        "summary": "Best practices for deploying efficient neural networks in production environments.",
-        "content": """
-        <p>Neural networks can be resource-intensive. This article shares techniques for optimizing them for production use.</p>
-        <h3>The Challenges of Production AI</h3>
-        <p>Moving from a research environment to production brings new challenges: latency requirements, resource constraints, and scalability needs.</p>
-        <h3>Optimization Techniques</h3>
-        <ul>
-            <li>Model quantization</li>
-            <li>Pruning</li>
-            <li>Knowledge distillation</li>
-            <li>TensorRT and ONNX conversions</li>
-        </ul>
-        <p>These approaches can significantly reduce model size and inference time while maintaining accuracy.</p>
-        """,
-        "date": datetime(2023, 8, 22),
-        "author": "Dr. Data Scientist",
-        "tags": ["Neural Networks", "Optimization", "MLOps"]
+        "title": "Funções de Custo em Machine Learning: Uma Visão Abrangente",
+        "summary": "Uma análise detalhada das diferentes funções de custo utilizadas em modelos de machine learning.",
+        "url": "https://medium.com/@lucasbenevinutopereira/funções-de-custo-em-machine-learning-uma-visão-abrangente-7cd95ba1058e",
+        "date": datetime(2024, 3, 5),
+        "author": "Lucas Benevinuto",
+        "tags": ["Machine Learning", "Funções de Custo", "Otimização"]
     },
     {
         "id": 3,
-        "title": "Ethical Considerations in AI Development",
-        "summary": "Exploring the ethical dimensions of artificial intelligence development.",
-        "content": """
-        <p>As AI becomes more powerful, ethical considerations become increasingly important. This article explores key ethical dimensions of AI development.</p>
-        <h3>Key Ethical Dimensions</h3>
-        <p>AI ethics encompasses fairness, accountability, transparency, and privacy, among other concerns.</p>
-        <h3>Practical Steps</h3>
-        <ul>
-            <li>Regular bias audits</li>
-            <li>Diverse training data</li>
-            <li>Stakeholder engagement</li>
-            <li>Governance frameworks</li>
-        </ul>
-        <p>By proactively addressing these ethical dimensions, we can build AI that benefits humanity while minimizing potential harms.</p>
-        """,
-        "date": datetime(2023, 7, 10),
-        "author": "Dr. Data Scientist",
-        "tags": ["AI Ethics", "Responsible AI", "Fairness"]
+        "title": "Destrinchando Vetores",
+        "summary": "Uma explicação aprofundada sobre vetores e suas aplicações em álgebra linear e machine learning.",
+        "url": "https://medium.com/@lucasbenevinutopereira/destrinchando-vetores-963b1ec954ec",
+        "date": datetime(2024, 2, 25),
+        "author": "Lucas Benevinuto",
+        "tags": ["Matemática", "Álgebra Linear", "Vetores"]
+    },
+    {
+        "id": 4,
+        "title": "Regressão Linear em Machine Learning",
+        "summary": "Um guia completo sobre regressão linear e sua implementação em problemas de machine learning.",
+        "url": "https://medium.com/@lucasbenevinutopereira/regressão-linear-em-machine-learning-bfebc4fe5969",
+        "date": datetime(2024, 2, 20),
+        "author": "Lucas Benevinuto",
+        "tags": ["Machine Learning", "Regressão Linear", "Estatística"]
+    },
+    {
+        "id": 5,
+        "title": "Destrinchando a Regressão Linear",
+        "summary": "Uma análise detalhada dos fundamentos matemáticos e estatísticos por trás da regressão linear.",
+        "url": "https://medium.com/@lucasbenevinutopereira/destrinchando-a-regressão-linear-aae2847351db",
+        "date": datetime(2024, 2, 15),
+        "author": "Lucas Benevinuto",
+        "tags": ["Machine Learning", "Regressão Linear", "Modelagem"]
+    },
+    {
+        "id": 6,
+        "title": "Fundamentos SQL",
+        "summary": "Um guia prático sobre os fundamentos da linguagem SQL para manipulação e consulta de dados.",
+        "url": "https://medium.com/@lucasbenevinutopereira/fundamentos-sql-654f39b67a7c",
+        "date": datetime(2024, 2, 10),
+        "author": "Lucas Benevinuto",
+        "tags": ["SQL", "Bancos de Dados", "Análise de Dados"]
+    },
+    {
+        "id": 7,
+        "title": "Introdução a Machine Learning",
+        "summary": "Uma introdução aos conceitos fundamentais de machine learning e suas aplicações.",
+        "url": "https://medium.com/@lucasbenevinutopereira/introdução-a-machine-learning-d91dec8f7964",
+        "date": datetime(2024, 2, 5),
+        "author": "Lucas Benevinuto",
+        "tags": ["Machine Learning", "Data Science", "IA"]
     }
 ]
 
@@ -90,7 +90,8 @@ async def get_blog_post(request: Request, post_id: int):
             {"request": request}, 
             status_code=404
         )
+    # Redirect to Medium article
     return templates.TemplateResponse(
-        "blog_post.html", 
+        "blog_redirect.html", 
         {"request": request, "post": post, "active_page": "blog"}
     ) 

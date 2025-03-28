@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }} | Lucas Benevinuto's Blog{% endblock %}
+
+{% block head %}
+<meta http-equiv="refresh" content="0;url={{ post.url }}">
+{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="redirect-content">
+            <h1>Redirecionando para o Medium...</h1>
+            <p>Você será redirecionado automaticamente para o artigo no Medium em instantes.</p>
+            <p>Se você não for redirecionado, <a href="{{ post.url }}" target="_blank">clique aqui</a>.</p>
+            
+            <div class="post-details">
+                <h2>{{ post.title }}</h2>
+                <div class="post-meta">
+                    <span><i class="far fa-calendar"></i> {{ post.date.strftime('%B %d, %Y') }}</span>
+                    <span><i class="far fa-user"></i> {{ post.author }}</span>
+                </div>
+                <p>{{ post.summary }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.redirect-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.redirect-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.redirect-content p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.redirect-content a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.post-details {
+    margin-top: 50px;
+    text-align: left;
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.post-details h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.post-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    color: var(--gray-text);
+    font-size: 0.9rem;
+}
+
+.post-meta i {
+    margin-right: 5px;
+}
+</style>
+{% endblock %} 

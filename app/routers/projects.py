@@ -10,30 +10,25 @@ templates = Jinja2Templates(directory="templates")
 projects = [
     {
         "id": 1,
-        "title": "Machine Learning Fraud Detection",
-        "description": "Developed a machine learning model to detect fraudulent transactions with 99.5% accuracy, resulting in a 75% reduction in fraud-related losses.",
-        "image": "images/project1.jpg",
+        "title": "Análise Imobiliária EUA",
+        "description": "Este projeto tem como objetivo analisar imóveis para aluguel nos Estados Unidos, com foco na identificação das comodidades mais relevantes para o preço e localização de maior valor. Através de técnicas de Machine Learning, segmentação de mercado e análise de padrões, foi possível gerar insights valiosos sobre o comportamento do mercado imobiliário.",
+        "image": "/static/images/project1.jpg",
         "category": "Machine Learning",
-        "github": "https://github.com/yourusername/fraud-detection",
-        "demo": "https://demo.yourdomain.com/fraud-detection"
+        "technologies": ["Python", "Machine Learning", "Análise de Dados"],
+        "github": "https://github.com/lucasbenevinuto/Real-Estate-Analysis-with-Machine-Learning",
+        "demo": "",
+        "period": "set de 2024 - out de 2024"
     },
     {
         "id": 2,
-        "title": "Natural Language Processing for Customer Service",
-        "description": "Built an NLP system that automatically routes customer queries to the right department with 95% accuracy, reducing response time by 50%.",
-        "image": "images/project2.jpg",
-        "category": "Natural Language Processing",
-        "github": "https://github.com/yourusername/nlp-customer-service",
-        "demo": "https://demo.yourdomain.com/nlp-service"
-    },
-    {
-        "id": 3,
-        "title": "Computer Vision for Retail Analytics",
-        "description": "Created a computer vision system that analyzes customer flow in retail stores, providing insights that increased conversion rates by 25%.",
-        "image": "images/project3.jpg",
-        "category": "Computer Vision",
-        "github": "https://github.com/yourusername/retail-vision",
-        "demo": "https://demo.yourdomain.com/retail-vision"
+        "title": "Financial Loan Risk Assessment and Approval Prediction",
+        "description": "O projeto Financial Loan Risk Assessment and Approval Prediction consiste no desenvolvimento de modelos preditivos para avaliar o risco de empréstimos e prever a probabilidade de aprovação, utilizando um dataset sintético com variáveis financeiras e comportamentais dos clientes.",
+        "image": "/static/images/project2.jpg",
+        "category": "Machine Learning",
+        "technologies": ["Python", "Machine Learning", "Análise de Risco"],
+        "github": "https://github.com/lucasbenevinuto/Risk-Analysis",
+        "demo": "",
+        "period": "set de 2024 - out de 2024"
     }
 ]
 
